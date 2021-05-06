@@ -18,6 +18,7 @@
 
 Алгоритм синхронизации воспроизведения музыки основан на пинге сервера и многократному сравнению часов. Алгоритм показал себя недостаточно хорошо, иногда выдаёт рассинхронизацию. В качестве лучшего решения следует использовать протокол синхронизации часов [NTP](https://en.wikipedia.org/wiki/Network_Time_Protocol).
 
+
 ## Дизайн приложения
 [Скачать дизайн-проект приложения/Download application design project](https://github.com/Andrey-Nedov-is-a-human/Favn-App-Cordova/tree/main/imgs/Lookbook.pdf)
 
