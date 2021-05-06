@@ -1,0 +1,895 @@
+body 
+{
+    background-color: #eaf4e4;
+    margin:0;
+    padding:0;
+    position: fixed;
+}
+
+@font-face 
+{
+    font-family:CintaSemibold;
+    src: url('fonts/CintaSemibold.otf');
+}
+
+@font-face 
+{
+    font-family:CintaHeavy;
+    src: url('fonts/CintaHeavy.otf');
+}
+
+.greenscreen
+{
+    height: 100vh;
+    width: 100vw;
+    margin-top: -100vh;
+    margin-left: 0;
+    background-color: #00b050;
+    position: absolute;
+    z-index: 100;
+}
+
+.mainPanels
+{
+    background-color: transparent;
+    margin-top, margin-left:0;
+    height:100vh;
+    width:100vw;
+    overflow-y: hidden;
+}
+
+        .statusPanel
+        {
+            z-index: 3;
+            position: relative;
+            background-color: #00b050;
+            margin-top, margin-left:0;
+            height:10vh;
+            width:100vw;
+            box-shadow: 0 0 3vh -0.5vh black;       /*  Включить если dopStatusPanel скрыта!!!   */
+        }
+
+                .nameButton
+                {
+                    background-color: transparent;
+                    border: none;
+                    color: white;
+                    position: absolute;
+                    outline: none;
+                    -webkit-user-select: none;
+                    margin-top: 1vh;
+                    margin-left: 25vw;
+                    height: 9vh;
+                    width: 50vw;
+                    font-family: CintaSemibold;
+                    font-size: 6.3vw;
+                    transition:all 0.2s ease;
+                }
+                .nameButton:active
+                {
+                    color: #a9d18e;
+                }
+
+                .broadcast, .connect
+                {
+                    background-color: transparent;
+                    background-size: cover;
+                    border: none;
+                    position: absolute;
+                    outline: none;
+                    -webkit-user-select: none;
+                    margin-top: 2.5vh;
+                    height: 11vw;
+                    width: 11vw;
+                    transition:all 0.2s ease;
+                }
+                .broadcast:active, .connect:active
+                {
+                    opacity: 0.5;
+                }
+
+                .broadcast
+                {
+                    margin-left: 83vw;
+                    background-image: url(img/broadcast_150.png);
+                }
+                 
+                .connect
+                {
+                    margin-left: 6vw;
+                    background-image: url(img/connect_150.png);
+                }
+
+
+
+        .dopStatusPanel
+        {
+            z-index: 2;
+            position: relative;
+            background-color: #00b050; 
+            margin-top, margin-left:0; 
+            height:7vh;
+            width:100vw;   
+            box-shadow: 0 0 3vh -0.5vh black;  
+        }
+                
+                .allTrackLabel
+                {
+                    background-color: transparent;
+                    border:none;
+                    outline: none;
+                    position: absolute;
+                    -webkit-user-select: none;
+                    color: white;
+                    text-align: left;
+                    font-family:CintaSemibold;
+                    font-size: 4.8vw;
+                    height:6vh;
+                    width:45vw;
+                    text-align: right;
+                    margin-top: 0vh;
+                    margin-left: 0vw; 
+                }
+
+                .search
+                {
+                    text-indent: 3vw;
+                    border:none;
+                    -webkit-user-select: none;
+                    outline: none;
+                    position: absolute;
+                    background-color: #00b050;
+                    font-family:CintaSemibold;
+                    font-size: 4.8vw;
+                    color: #a9d18e; 
+                    margin-top: 0vh;
+                    margin-left:43.5vw;
+                    height: 5.5vh;
+                    width: 54vw;
+                    transition:all 0.2s ease;
+                    text-overflow: ellipsis;
+                }
+                .search:focus
+                {
+                    background-color: white;
+                    color: #00b050;
+                    margin-left:3vw;
+                    width: 72vw;
+                }
+
+                .searchButton
+                {
+                    background-color: transparent;
+                    display:none;
+                    border:none;
+                    outline: none;
+                    position: absolute;
+                    -webkit-user-select: none;
+                    color: white;
+                    font-family:CintaSemibold;
+                    font-size: 4.8vw;
+                    height:6vh;
+                    width:28vw;
+                    text-align: center;
+                    margin-top: 0vh;
+                    margin-left: 72vw; 
+                }
+                .searchButton:active
+                {
+                    opacity: 0.5;
+                }
+
+
+
+        .cards
+        {
+            position: relative;
+            z-index: 1;
+            background-color: transparent;
+            margin-top, margin-left:0;
+            height:90vh;
+            width:100vw;
+            overflow-y: scroll;
+        }
+
+                .mainPageButtons
+                {
+                    background-color: white;
+                    border:none;
+                    outline: none;
+                    -webkit-user-select: none;
+                    margin-top: 3.4vw;
+                    margin-left: 0;
+                    height: 29vw;
+                    width: 100vw;
+                    transition:all 0.2s ease;
+                }
+                .mainPageButtons:active
+                {
+                    /*background-color: #eaf4e4;*/
+                    padding-left: 5vw;
+                    /*width: 95vw;*/
+                }
+
+                .themesBackGroundElement
+                {
+                    z-index: 1;
+                    position: relative;
+                    background-color: white;
+                    border:none;
+                    outline: none;
+                    -webkit-user-select: none;
+                    margin-top: 20vh;
+                    margin-left: 0vw;
+                    height: 35vh;
+                    width: 100vw;
+                }
+
+                .themesButton
+                {
+                    background-image: url("img/themes.png");
+                    background-size: cover;
+                    z-index: 2;
+                    position: relative;
+                    border:none;
+                    outline: none;
+                    -webkit-user-select: none;
+                    margin-top: -50vh;
+                    margin-left: 7vw;
+                    height: 45vh;
+                    width: 86vw;
+                    box-shadow: 0 0 3vh -0.5vh;
+                    transition:all 0.1s ease;
+                }
+                .themesButton:active
+                {
+                    -webkit-transform:scale(1.05);
+                }
+
+                        .bigButtonText
+                        {
+                            text-align: left;
+                            display: block;
+                            color: black;
+                            font-family:CintaSemibold;
+                            font-size: 6.3vw;
+                            margin-top: 4.3vw;
+                            margin-left: 12vw;
+                            text-overflow: ellipsis;
+                            overflow: hidden;
+                            white-space: nowrap
+                        }
+
+                        .smallButtonText
+                        {
+                            text-align: left;
+                            display: block;
+                            color: #00b050;
+                            font-family:CintaSemibold;
+                            font-size: 4.3vw;
+                            margin-top: -3.6vw;
+                            margin-left: 12vw;
+                            text-overflow: ellipsis;
+                            overflow: hidden;
+                            white-space: nowrap
+                        }
+
+
+
+        .allTracks
+        {
+            /*-webkit-filter: blur(2px);
+            filter: blur(2px);*/
+            position: relative;
+            z-index: 1;
+            background-color: transparent;
+            margin-top, margin-left:0;
+            height:83vh;
+            width:100vw;
+            overflow-y: scroll;
+        }
+
+                .preloader
+                {
+                    height: 11vw;
+                    width: 30vw;
+                    margin-top: 7vw;
+                    margin-left: 35vw;
+                    background-color: transparent;
+                }
+
+                    .circle1, .circle2, .circle3
+                    {
+                        opacity: 0;
+                        background-color: #d1e7c3;
+                        border-radius: 4vw;
+                        border: none;
+                        outline: none;
+                        -webkit-user-select: none;   
+                        height: 4vw;
+                        width: 4vw;
+                        margin-top: 3.5vw;
+                        position: absolute;
+
+                        animation: preloader_animation  1s infinite  ease-in-out;
+                    }
+
+                    .circle1
+                    {
+                        margin-left: 8vw;
+                        animation-delay: 0.33s, 1s;
+                    }
+
+                    .circle2
+                    {
+                        margin-left: 13vw;
+                        animation-delay: 0.66s, 1s;
+                    }
+
+                    .circle3
+                    {
+                        margin-left: 18vw;
+                        animation-delay: 0.99s, 1s;
+                    }
+
+                    @keyframes preloader_animation 
+                    {
+                      from 
+                      {
+                        opacity: 0;
+                        /*transition: scale(1);*/
+                        /*height:4vw;
+                        width:4vw;*/
+                      }
+                      50%
+                      {
+                        opacity: 1;
+                        /*transition: scale(1.3);*/
+                        /*height:5vw;
+                        width:5vw;*/
+                      }
+                      to
+                      {
+                        opacity: 0;
+                        /*transition: scale(1);*/
+                        /*height:4vw;
+                        width:4vw;*/
+                      }
+                    }
+
+                .trackButton
+                {
+                    background: linear-gradient(to top, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0) 15%);
+                    background-color: white;
+                    border:none;
+                    outline: none;
+                    -webkit-user-select: none;
+                    margin-left: 0vw;
+                    margin-top: -1vh;
+                    height: 29vw;
+                    width: 100vw;
+                    transition:all 0.2s ease;
+                }
+                .trackButton:active
+                {
+                    background-color: #eaf4e4;
+                }
+
+
+        /*карточка трека*/
+        .trackCardsDiv
+        {
+            border:none;
+            outline: none;
+            height: 92vw;
+            width: 80vw;
+            margin-left: 10vw;
+            margin-top: 8vw;
+            /*background-color: #a9d18e;*/
+            background: linear-gradient(to top, #d1e7c3, #a9d18e);
+            border:none;
+            /*background-color: red;*/
+            border-radius: 5vh;
+            outline: none;
+            -webkit-user-select: none;
+            transition: all 0.2s ease;
+            transform: rotateY(0deg);
+            box-shadow: 0 0 3vw 0vh rgba(0,0,0, 0.3);
+            backface-visibility: hidden;
+            /*animation: cardRotate_go 300ms ease-in-out forwards*/
+        }
+        .trackCardsDiv:active
+        {
+            transform: scale(0.95);
+        }
+
+        @keyframes cardRotate_go
+        {
+            0%
+            {
+                transform: rotateY(0deg) scale(1);
+                margin-top: 8vw;
+            }
+            100%
+            {
+                transform: rotateY(180deg) scale(1.05);
+                margin-top: 6vw;
+            }
+        }
+
+
+        /*большой текст на карточке*/
+        .bigTextCard
+        {
+            text-align: center;
+            /*vertical-align: middle;*/
+            /*display: block;*/
+            color: white;
+            background-color: transparent;
+            font-family:CintaHeavy;
+            font-size: 8.5vw;
+            height: 10vw;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap
+        }
+
+        /*маленький текст на карточке*/
+        .smallTextCard
+        {
+            text-align: center;
+            /*vertical-align: middle;*/
+            /*display: block;*/
+            color: #eaf4e4;
+            background-color: transparent;
+            font-family:CintaHeavy;
+            font-size: 4.7vw;
+            height: 5vw;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap
+        }
+
+        /*значок play на карточке*/
+        .playCard
+        {
+            height: 18vw;
+            width: 18vw;
+            margin-left: 24vw;
+            background-image: url(img/play.png);
+            background-size: cover;
+        }
+
+        /*три точки на карточке*/
+        .moreCard           
+        {
+            -webkit-user-select: none;
+            outline: none;
+            border: none;
+            height: 18vw;
+            width: 18vw;
+            background-color: transparent;
+            background-image: url(img/more.png);
+            background-size: cover;
+        }
+
+        .bottom
+        {
+            height: 12vh;  /*12 в мини режиме; 17 в развернутом режиме*/
+            width: 100vw;
+            margin-top: 0vh;  /*0 в мини режиме; -5 в развернутом режиме*/
+            margin-left: 0;
+            background-color: #00b050;
+            position: absolute;
+            z-index: 10;
+            box-shadow: 0 0 3vh -0.7vh black;
+            display:none;
+        }
+
+        .toCardButton
+        {
+            position: absolute;
+            background-color: transparent;
+            border:none;
+            outline: none;
+            -webkit-user-select: none;
+            margin-left: 22vw;
+            margin-top: -9.5vh;
+            height: 11vh;
+            width: 78vw;
+            z-index: 20;
+        }
+
+        .playButton
+        {
+            position: absolute;
+            background-image: url(img/play.png);
+            background-size: cover;
+            background-color: transparent;
+            border:none;
+            outline: none;
+            -webkit-user-select: none;
+            margin-left: 3vw;
+            margin-top: 1vh;
+            height: 10vh;
+            width: 10vh;
+            z-index: 11;
+        }
+
+
+        .playButtonInTrack
+        {
+            position: absolute;
+            background-image: url(img/playToTrack.png);
+            background-size: cover;
+            background-color: transparent;
+            border:none;
+            outline: none;
+            -webkit-user-select: none;
+            margin-left: -10vw;
+            margin-top: 0vw;
+            height: 22vw;
+            width: 22vw;
+            z-index: 200;
+        }
+
+        .pauseButtonInTrack
+        {
+            position: absolute;
+            background-image: url(img/pauseToTrack.png);
+            background-size: cover;
+            background-color: transparent;
+            border:none;
+            outline: none;
+            -webkit-user-select: none;
+            margin-left: -10vw;
+            margin-top: 0vw;
+            height: 22vw;
+            width: 22vw;
+            z-index: 200;
+        }
+
+        .bigButtonTextPanel
+        {
+            text-align: left;
+            display: block;
+            color: white;
+            font-family: CintaSemibold;
+            font-size: 5vw;
+            margin-top: 3.5vw;
+            margin-left: 22vw;
+            width: 70vw;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
+        }
+
+        .smallButtonTextPanel
+        {
+            text-align: left;
+            display: block;
+            color: #d1e7c3;
+            font-family: CintaSemibold;
+            font-size: 3.4vw;
+            margin-top: -4vw;
+            margin-left: 22vw;
+            width: 70vw;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
+        }
+
+        .duration
+        {
+            position: absolute;
+            -webkit-appearance: none;
+            appearance: none;
+            width: 70vw;
+            height: 0.9vw;
+            margin-left: 22vw;
+            border-radius: 0.45vw;
+            margin-top: -1.2vw;
+            padding: 0;
+            background: white;
+            overflow: hidden;
+            border:none;
+            outline: none;
+            -webkit-user-select: none;
+        }
+
+        .duration::-webkit-slider-thumb
+        {
+            border:none;
+            outline: none;
+            -webkit-user-select: none;
+            -webkit-appearance: none;
+            appearance: none;
+            width: 1vw;
+            height: 1vw;
+            cursor: pointer;
+            opacity: 1;
+            box-shadow:
+            0vw 0 #d1e7c3,
+            -0.5vw 0 #d1e7c3,-1vw 0 #d1e7c3,-1.5vw 0 #d1e7c3,-2vw 0 #d1e7c3,-2.5vw 0 #d1e7c3,
+            -3vw 0 #d1e7c3,-3.5vw 0 #d1e7c3,-4vw 0 #d1e7c3,-4.5vw 0 #d1e7c3,-5vw 0 #d1e7c3,
+            -5.5vw 0 #d1e7c3,-6vw 0 #d1e7c3,-6.5vw 0 #d1e7c3,-7vw 0 #d1e7c3,-7.5vw 0 #d1e7c3,
+            -8vw 0 #d1e7c3,-8.5vw 0 #d1e7c3,-9vw 0 #d1e7c3,-9.5vw 0 #d1e7c3,-10vw 0 #d1e7c3,
+            -10.5vw 0 #d1e7c3,-11vw 0 #d1e7c3,-11.5vw 0 #d1e7c3,-12vw 0 #d1e7c3,-12.5vw 0 #d1e7c3,
+            -13vw 0 #d1e7c3,-13.5vw 0 #d1e7c3,-14vw 0 #d1e7c3,-14.5vw 0 #d1e7c3,-15vw 0 #d1e7c3,
+            -15.5vw 0 #d1e7c3,-16vw 0 #d1e7c3,-16.5vw 0 #d1e7c3,-17vw 0 #d1e7c3,-17.5vw 0 #d1e7c3,
+            -18vw 0 #d1e7c3,-18.5vw 0 #d1e7c3,-19vw 0 #d1e7c3,-19.5vw 0 #d1e7c3,-20vw 0 #d1e7c3,
+            -20.5vw 0 #d1e7c3,-21vw 0 #d1e7c3,-21.5vw 0 #d1e7c3,-22vw 0 #d1e7c3,-22.5vw 0 #d1e7c3,
+            -23vw 0 #d1e7c3,-23.5vw 0 #d1e7c3,-24vw 0 #d1e7c3,-24.5vw 0 #d1e7c3,-25vw 0 #d1e7c3,
+            -25.5vw 0 #d1e7c3,-26vw 0 #d1e7c3,-26.5vw 0 #d1e7c3,-27vw 0 #d1e7c3,-27.5vw 0 #d1e7c3,
+            -28vw 0 #d1e7c3,-28.5vw 0 #d1e7c3,-29vw 0 #d1e7c3,-29.5vw 0 #d1e7c3,-30vw 0 #d1e7c3,
+            -30.5vw 0 #d1e7c3,-31vw 0 #d1e7c3,-31.5vw 0 #d1e7c3,-32vw 0 #d1e7c3,-32.5vw 0 #d1e7c3,
+            -33vw 0 #d1e7c3,-33.5vw 0 #d1e7c3,-34vw 0 #d1e7c3,-34.5vw 0 #d1e7c3,-35vw 0 #d1e7c3,
+            -35.5vw 0 #d1e7c3,-36vw 0 #d1e7c3,-36.5vw 0 #d1e7c3,-37vw 0 #d1e7c3,-37.5vw 0 #d1e7c3,
+            -38vw 0 #d1e7c3,-38.5vw 0 #d1e7c3,-39vw 0 #d1e7c3,-39.5vw 0 #d1e7c3,-40vw 0 #d1e7c3,
+            -40.5vw 0 #d1e7c3,-41vw 0 #d1e7c3,-41.5vw 0 #d1e7c3,-42vw 0 #d1e7c3,-42.5vw 0 #d1e7c3,
+            -43vw 0 #d1e7c3,-43.5vw 0 #d1e7c3,-44vw 0 #d1e7c3,-44.5vw 0 #d1e7c3,-45vw 0 #d1e7c3,
+            -45.5vw 0 #d1e7c3,-46vw 0 #d1e7c3,-46.5vw 0 #d1e7c3,-47vw 0 #d1e7c3,-47.5vw 0 #d1e7c3,
+            -48vw 0 #d1e7c3,-48.5vw 0 #d1e7c3,-49vw 0 #d1e7c3,-49.5vw 0 #d1e7c3,-50vw 0 #d1e7c3,
+            -50.5vw 0 #d1e7c3,-51vw 0 #d1e7c3,-51.5vw 0 #d1e7c3,-52vw 0 #d1e7c3,-52.5vw 0 #d1e7c3,
+            -53vw 0 #d1e7c3,-53.5vw 0 #d1e7c3,-54vw 0 #d1e7c3,-54.5vw 0 #d1e7c3,-55vw 0 #d1e7c3,
+            -55.5vw 0 #d1e7c3,-56vw 0 #d1e7c3,-56.5vw 0 #d1e7c3,-57vw 0 #d1e7c3,-57.5vw 0 #d1e7c3,
+            -58vw 0 #d1e7c3,-58.5vw 0 #d1e7c3,-59vw 0 #d1e7c3,-59.5vw 0 #d1e7c3,-60vw 0 #d1e7c3,
+            -60.5vw 0 #d1e7c3,-61vw 0 #d1e7c3,-61.5vw 0 #d1e7c3,-62vw 0 #d1e7c3,-62.5vw 0 #d1e7c3,
+            -63vw 0 #d1e7c3,-63.5vw 0 #d1e7c3,-64vw 0 #d1e7c3,-64.5vw 0 #d1e7c3,-65vw 0 #d1e7c3,
+            -65.5vw 0 #d1e7c3,-66vw 0 #d1e7c3,-66.5vw 0 #d1e7c3,-67vw 0 #d1e7c3,-67.5vw 0 #d1e7c3,
+            -68vw 0 #d1e7c3,-68.5vw 0 #d1e7c3,-69vw 0 #d1e7c3,-69.5vw 0 #d1e7c3,-70vw 0 #d1e7c3,
+            -70.5vw 0 #d1e7c3,-71vw 0 #d1e7c3,-71.5vw 0 #d1e7c3,-72vw 0 #d1e7c3,-72.5vw 0 #d1e7c3,
+            -73vw 0 #d1e7c3,-73.5vw 0 #d1e7c3,-74vw 0 #d1e7c3,-74.5vw 0 #d1e7c3,-75vw 0 #d1e7c3,
+            -75.5vw 0 #d1e7c3,-76vw 0 #d1e7c3,-76.5vw 0 #d1e7c3,-77vw 0 #d1e7c3,-77.5vw 0 #d1e7c3,
+            -78vw 0 #d1e7c3,-78.5vw 0 #d1e7c3,-79vw 0 #d1e7c3,-79.5vw 0 #d1e7c3,-80vw 0 #d1e7c3,
+            -80.5vw 0 #d1e7c3,-81vw 0 #d1e7c3,-81.5vw 0 #d1e7c3,-82vw 0 #d1e7c3,-82.5vw 0 #d1e7c3,
+            -83vw 0 #d1e7c3,-83.5vw 0 #d1e7c3,-84vw 0 #d1e7c3,-84.5vw 0 #d1e7c3,-85vw 0 #d1e7c3,
+            -85.5vw 0 #d1e7c3,-86vw 0 #d1e7c3,-86.5vw 0 #d1e7c3,-87vw 0 #d1e7c3,-87.5vw 0 #d1e7c3,
+            -88vw 0 #d1e7c3,-88.5vw 0 #d1e7c3,-89vw 0 #d1e7c3,-89.5vw 0 #d1e7c3,-90vw 0 #d1e7c3,
+            -90.5vw 0 #d1e7c3,-91vw 0 #d1e7c3,-91.5vw 0 #d1e7c3,-92vw 0 #d1e7c3,-92.5vw 0 #d1e7c3,
+            -93vw 0 #d1e7c3,-93.5vw 0 #d1e7c3,-94vw 0 #d1e7c3,-94.5vw 0 #d1e7c3,-95vw 0 #d1e7c3,
+            -95.5vw 0 #d1e7c3,-96vw 0 #d1e7c3,-96.5vw 0 #d1e7c3,-97vw 0 #d1e7c3,-97.5vw 0 #d1e7c3,
+            -98vw 0 #d1e7c3,-98.5vw 0 #d1e7c3,-99vw 0 #d1e7c3,-99.5vw 0 #d1e7c3
+
+
+            /*-13px 0 #d1e7c3, -26px 0 #d1e7c3, -39px 0 #d1e7c3,
+            -52px 0 #d1e7c3, -65px 0 #d1e7c3, -78px 0 #d1e7c3,
+            -91px 0 #d1e7c3, -104px 0 #d1e7c3, -117px 0 #d1e7c3,
+            -130px 0 #d1e7c3, -143px 0 #d1e7c3, -156px 0 #d1e7c3,
+            -169px 0 #d1e7c3, -182px 0 #d1e7c3, -195px 0 #d1e7c3,
+            -208px 0 #d1e7c3, -221px 0 #d1e7c3, -234px 0 #d1e7c3,
+            -247px 0 #d1e7c3, -260px 0 #d1e7c3;*/
+        }
+
+
+        .bottomCard
+        {
+            height: 40vh;  /*12 в мини режиме; 17 в развернутом режиме*/
+            width: 100vw;
+            margin-top: -28vh;  /*0 в мини режиме; -5 в развернутом режиме*/
+            margin-left: 0;
+            background-color: #00b050;
+            position: absolute;
+            z-index: 10;
+            box-shadow: 0 0 3vh -0.7vh black;
+            display:none;
+        }
+
+        .durationCard
+        {
+            position: absolute;
+            -webkit-appearance: none;
+            appearance: none;
+            width: 90vw;
+            height: 2vw;
+            margin-left: 5vw;
+            /*border-radius: 1.5vw;*/
+            margin-top: 40vw;
+            padding: 0;
+            background: white;
+            /*overflow: hidden;*/
+            border:none;
+            /*outline: none;*/
+            -webkit-user-select: none;
+            user-select: none;
+            outline: none;
+        }
+
+        .durationCard::-webkit-slider-thumb
+        {
+            border:none;
+            /*border-radius: 2vw;*/
+            background-color: transparent;
+            background-image: url('img/player_buttons/range_50.png');
+            background-size: 5.5vw; 
+            background-repeat: no-repeat;
+            background-position: center; 
+            outline: none;
+            -webkit-appearance: none;
+            -webkit-user-select: none;
+            user-select: none;
+            appearance: none;
+            width: 5.5vw;
+            height: 5.5vw;
+            /*cursor: pointer;*/
+            opacity: 1;
+            /*box-shadow: 0vw 0.1vw 0 -1.5vw #d1e7c3, -2.5vw 0.1vw 0 -1.5vw #d1e7c3;*/
+            box-shadow: 
+            0.5vw 0.1vw 0 -1.85vw #d1e7c3, -1vw 0.1vw 0 -1.85vw #d1e7c3, -2.5vw 0.1vw 0 -1.85vw #d1e7c3, 
+            -4vw 0.1vw 0 -1.85vw #d1e7c3, -5.5vw 0.1vw 0 -1.85vw #d1e7c3, -7vw 0.1vw 0 -1.85vw #d1e7c3, 
+            -8.5vw 0.1vw 0 -1.85vw #d1e7c3, -10vw 0.1vw 0 -1.85vw #d1e7c3, -11.5vw 0.1vw 0 -1.85vw #d1e7c3, 
+            -13vw 0.1vw 0 -1.85vw #d1e7c3, -14.5vw 0.1vw 0 -1.85vw #d1e7c3, -16vw 0.1vw 0 -1.85vw #d1e7c3, 
+            -17.5vw 0.1vw 0 -1.85vw #d1e7c3, -19vw 0.1vw 0 -1.85vw #d1e7c3, -20.5vw 0.1vw 0 -1.85vw #d1e7c3, 
+            -22vw 0.1vw 0 -1.85vw #d1e7c3, -23.5vw 0.1vw 0 -1.85vw #d1e7c3, -25vw 0.1vw 0 -1.85vw #d1e7c3, 
+            -26.5vw 0.1vw 0 -1.85vw #d1e7c3, -28vw 0.1vw 0 -1.85vw #d1e7c3, -29.5vw 0.1vw 0 -1.85vw #d1e7c3, 
+            -31vw 0.1vw 0 -1.85vw #d1e7c3, -32.5vw 0.1vw 0 -1.85vw #d1e7c3, -34vw 0.1vw 0 -1.85vw #d1e7c3, 
+            -35.5vw 0.1vw 0 -1.85vw #d1e7c3, -37vw 0.1vw 0 -1.85vw #d1e7c3, -38.5vw 0.1vw 0 -1.85vw #d1e7c3, 
+            -40vw 0.1vw 0 -1.85vw #d1e7c3, -41.5vw 0.1vw 0 -1.85vw #d1e7c3, -43vw 0.1vw 0 -1.85vw #d1e7c3, 
+            -44.5vw 0.1vw 0 -1.85vw #d1e7c3, -46vw 0.1vw 0 -1.85vw #d1e7c3, -47.5vw 0.1vw 0 -1.85vw #d1e7c3, 
+            -49vw 0.1vw 0 -1.85vw #d1e7c3, -50.5vw 0.1vw 0 -1.85vw #d1e7c3, -52vw 0.1vw 0 -1.85vw #d1e7c3, 
+            -53.5vw 0.1vw 0 -1.85vw #d1e7c3, -55vw 0.1vw 0 -1.85vw #d1e7c3, -56.5vw 0.1vw 0 -1.85vw #d1e7c3, 
+            -58vw 0.1vw 0 -1.85vw #d1e7c3, -59.5vw 0.1vw 0 -1.85vw #d1e7c3, -61vw 0.1vw 0 -1.85vw #d1e7c3, 
+            -62.5vw 0.1vw 0 -1.85vw #d1e7c3, -64vw 0.1vw 0 -1.85vw #d1e7c3, -65.5vw 0.1vw 0 -1.85vw #d1e7c3, 
+            -67vw 0.1vw 0 -1.85vw #d1e7c3, -68.5vw 0.1vw 0 -1.85vw #d1e7c3, -70vw 0.1vw 0 -1.85vw #d1e7c3, 
+            -71.5vw 0.1vw 0 -1.85vw #d1e7c3, -73vw 0.1vw 0 -1.85vw #d1e7c3, -74.5vw 0.1vw 0 -1.85vw #d1e7c3, 
+            -76vw 0.1vw 0 -1.85vw #d1e7c3, -77.5vw 0.1vw 0 -1.85vw #d1e7c3, -79vw 0.1vw 0 -1.85vw #d1e7c3, 
+            -80.5vw 0.1vw 0 -1.85vw #d1e7c3, -82vw 0.1vw 0 -1.85vw #d1e7c3, -83.5vw 0.1vw 0 -1.85vw #d1e7c3, 
+            -85vw 0.1vw 0 -1.85vw #d1e7c3, -86.5vw 0.1vw 0 -1.85vw #d1e7c3, -88vw 0.1vw 0 -1.85vw #d1e7c3, 
+            -89.5vw 0.1vw 0 -1.85vw #d1e7c3, -91vw 0.1vw 0 -1.85vw #d1e7c3, -92.5vw 0.1vw 0 -1.85vw #d1e7c3, 
+            -94vw 0.1vw 0 -1.85vw #d1e7c3, -95.5vw 0.1vw 0 -1.85vw #d1e7c3, -97vw 0.1vw 0 -1.85vw #d1e7c3, 
+            -98.5vw 0.1vw 0 -1.85vw #d1e7c3, -100vw 0.1vw 0 -1.85vw #d1e7c3, -101.5vw 0.1vw 0 -1.85vw #d1e7c3, 
+            -103vw 0.1vw 0 -1.85vw #d1e7c3, -104.5vw 0.1vw 0 -1.85vw #d1e7c3, -106vw 0.1vw 0 -1.85vw #d1e7c3, 
+            -107.5vw 0.1vw 0 -1.85vw #d1e7c3, -109vw 0.1vw 0 -1.85vw #d1e7c3, -110.5vw 0.1vw 0 -1.85vw #d1e7c3, 
+            -112vw 0.1vw 0 -1.85vw #d1e7c3, -113.5vw 0.1vw 0 -1.85vw #d1e7c3, -115vw 0.1vw 0 -1.85vw #d1e7c3, 
+            -116.5vw 0.1vw 0 -1.85vw #d1e7c3, -118vw 0.1vw 0 -1.85vw #d1e7c3;
+
+            /*0px 0 #d1e7c3, -13px 0 #d1e7c3, -26px 0 #d1e7c3, -39px 0 #d1e7c3,
+            -52px 0 #d1e7c3, -65px 0 #d1e7c3, -78px 0 #d1e7c3,
+            -91px 0 #d1e7c3, -104px 0 #d1e7c3, -117px 0 #d1e7c3,
+            -130px 0 #d1e7c3, -143px 0 #d1e7c3, -156px 0 #d1e7c3,
+            -169px 0 #d1e7c3, -182px 0 #d1e7c3, -195px 0 #d1e7c3,
+            -208px 0 #d1e7c3, -221px 0 #d1e7c3, -234px 0 #d1e7c3,
+            -247px 0 #d1e7c3, -260px 0 #d1e7c3, -273px 0 #d1e7c3, 
+            -286px 0 #d1e7c3, -299px 0 #d1e7c3, -312px 0 #d1e7c3, 
+            -325px 0 #d1e7c3, -338px 0 #d1e7c3, -351px 0 #d1e7c3,
+            -364px 0 #d1e7c3, -377px 0 #d1e7c3, -390px 0 #d1e7c3,
+            -403px 0 #d1e7c3, -416px 0 #d1e7c3, -429px 0 #d1e7c3,
+            -442px 0 #d1e7c3, -455px 0 #d1e7c3, -468px 0 #d1e7c3,
+            -481px 0 #d1e7c3, -494px 0 #d1e7c3, -507px 0 #d1e7c3;*/
+        }
+
+        /*.durationDiv
+        {
+            position: absolute;
+            width: 90vw;
+            height: 2vw;
+            margin-left: 5vw;
+            margin-top: 40vw;
+            background: white;
+        }
+
+        .durationDivFill
+        {
+            width: 50vw;
+            height: 2vw;
+            margin-left: 0;
+            margin-top: 0;
+            background: #d1e7c3;
+        }*/
+
+        .timeFrom
+        {
+            margin-left: 5vw;
+            position: absolute;
+            margin-top: 33.5vw;
+            color: white;
+            -webkit-user-select: none;
+            font-family: CintaSemibold;
+            font-size: 4vw;
+        }
+
+        .timeTo
+        {
+            margin-left: 88vw;
+            position: absolute;
+            margin-top: 33.5vw;
+            color: white;
+            -webkit-user-select: none;
+            font-family: CintaSemibold;
+            font-size: 4vw;
+        }
+
+
+
+        .backCard
+        {
+            background-image: url(img/player_buttons/close2.png);
+            background-color: transparent;
+            background-size: cover;
+            margin-left: 10vw;
+            position: absolute;
+            height: 6vw;
+            width: 6vw;
+            margin-top: 13vw;
+            outline: none;
+            -webkit-user-select: none;
+            border: none;
+            z-index: 30;
+            transition:all 0.2s ease;
+        }
+        .backCard:active
+        {
+            transform: scale(1.2);
+        }
+
+        .directionCard
+        {
+            background-image: url(img/player_buttons/down.png);
+            background-color: transparent;
+            background-size: cover;
+            margin-left: 34.4vw;
+            position: absolute;
+            height: 6vw;
+            width: 6vw;
+            margin-top: 13vw;
+            outline: none;
+            -webkit-user-select: none;
+            user-select: none;
+            border: none;
+            z-index: 30;
+            transition:all 0.2s ease;
+        }
+        .directionCard:active
+        {
+            transform: scale(1.2);
+        }
+
+        .sequenceCard
+        {
+            background-image: url(img/player_buttons/mix.png);
+            background-color: transparent;
+            background-size: cover;
+            margin-left: 59.4vw;
+            position: absolute;
+            height: 6vw;
+            width: 6vw;
+            margin-top: 13vw;
+            outline: none;
+            -webkit-user-select: none;
+            user-select: none;
+            border: none;
+            z-index: 30;
+        }
+
+        .repeatCard
+        {
+            background-image: url(img/player_buttons/all.png);
+            background-color: transparent;
+            background-size: cover;
+            margin-left: 84.1vw;
+            position: absolute;
+            height: 6vw;
+            width: 6vw;
+            margin-top: 13vw;
+            outline: none;
+            -webkit-user-select: none;
+            border: none;
+            z-index: 30;
+            transition:all 0.2s ease;
+        }
+        .repeatCard:active
+        {
+            transform: scale(1.2);
+        }
+
+
+
+
+
+
+
+
+
+
+
+

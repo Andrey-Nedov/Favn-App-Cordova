@@ -1,0 +1,55 @@
+
+{
+	"buildFiles" : 
+	[
+		"C:/Users/GoodInI/Desktop/Cordova/favn_r/platforms/android/src/com/janeasystems/cdvnodejsmobile/jni/CMakeLists.txt"
+	],
+	"cleanCommands" : 
+	[
+		"C:\\Users\\GoodInI\\AppData\\Local\\Android\\android-sdk\\cmake\\3.6.4111459\\bin\\cmake.exe --build C:\\Users\\GoodInI\\Desktop\\Cordova\\favn_r\\platforms\\android\\.externalNativeBuild\\cmake\\debug\\x86 --target clean"
+	],
+	"cppFileExtensions" : [ "cpp" ],
+	"libraries" : 
+	{
+		"libnode-Debug-x86" : 
+		{
+			"abi" : "x86",
+			"artifactName" : "libnode",
+			"buildType" : "debug",
+			"output" : "C:/Users/GoodInI/Desktop/Cordova/favn_r/platforms/android/src/com/janeasystems/cdvnodejsmobile/jni/libnode/bin/x86/libnode.so",
+			"toolchain" : "1093562369"
+		},
+		"nodejs-mobile-cordova-native-lib-Debug-x86" : 
+		{
+			"abi" : "x86",
+			"artifactName" : "nodejs-mobile-cordova-native-lib",
+			"buildCommand" : "C:\\Users\\GoodInI\\AppData\\Local\\Android\\android-sdk\\cmake\\3.6.4111459\\bin\\cmake.exe --build C:\\Users\\GoodInI\\Desktop\\Cordova\\favn_r\\platforms\\android\\.externalNativeBuild\\cmake\\debug\\x86 --target nodejs-mobile-cordova-native-lib",
+			"buildType" : "debug",
+			"files" : 
+			[
+				
+				{
+					"flags" : "  --target=i686-none-linux-android --gcc-toolchain=C:/Users/GoodInI/AppData/Local/Android/android-sdk/ndk-bundle/toolchains/x86-4.9/prebuilt/windows-x86_64 --sysroot=C:/Users/GoodInI/AppData/Local/Android/android-sdk/ndk-bundle/sysroot  -Dnodejs_mobile_cordova_native_lib_EXPORTS -IC:\\Users\\GoodInI\\Desktop\\Cordova\\favn_r\\platforms\\android\\src\\com\\janeasystems\\cdvnodejsmobile\\jni\\libnode -isystem C:\\Users\\GoodInI\\AppData\\Local\\Android\\android-sdk\\ndk-bundle\\sources\\cxx-stl\\llvm-libc++\\include -isystem C:\\Users\\GoodInI\\AppData\\Local\\Android\\android-sdk\\ndk-bundle\\sources\\android\\support\\include -isystem C:\\Users\\GoodInI\\AppData\\Local\\Android\\android-sdk\\ndk-bundle\\sources\\cxx-stl\\llvm-libc++abi\\include  -isystem C:/Users/GoodInI/AppData/Local/Android/android-sdk/ndk-bundle/sysroot/usr/include/i686-linux-android -D__ANDROID_API__=14 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -Wa,--noexecstack -Wformat -Werror=format-security -std=c++11  -O0 -fno-limit-debug-info  -fPIC    -c ",
+					"src" : "C:/Users/GoodInI/Desktop/Cordova/favn_r/platforms/android/src/com/janeasystems/cdvnodejsmobile/jni/native-lib.cpp",
+					"workingDirectory" : "C:/Users/GoodInI/Desktop/Cordova/favn_r/platforms/android/.externalNativeBuild/cmake/debug/x86"
+				},
+				
+				{
+					"flags" : "  --target=i686-none-linux-android --gcc-toolchain=C:/Users/GoodInI/AppData/Local/Android/android-sdk/ndk-bundle/toolchains/x86-4.9/prebuilt/windows-x86_64 --sysroot=C:/Users/GoodInI/AppData/Local/Android/android-sdk/ndk-bundle/sysroot  -Dnodejs_mobile_cordova_native_lib_EXPORTS -IC:\\Users\\GoodInI\\Desktop\\Cordova\\favn_r\\platforms\\android\\src\\com\\janeasystems\\cdvnodejsmobile\\jni\\libnode -isystem C:\\Users\\GoodInI\\AppData\\Local\\Android\\android-sdk\\ndk-bundle\\sources\\cxx-stl\\llvm-libc++\\include -isystem C:\\Users\\GoodInI\\AppData\\Local\\Android\\android-sdk\\ndk-bundle\\sources\\android\\support\\include -isystem C:\\Users\\GoodInI\\AppData\\Local\\Android\\android-sdk\\ndk-bundle\\sources\\cxx-stl\\llvm-libc++abi\\include  -isystem C:/Users/GoodInI/AppData/Local/Android/android-sdk/ndk-bundle/sysroot/usr/include/i686-linux-android -D__ANDROID_API__=14 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -Wa,--noexecstack -Wformat -Werror=format-security -std=c++11  -O0 -fno-limit-debug-info  -fPIC    -c ",
+					"src" : "C:/Users/GoodInI/Desktop/Cordova/favn_r/platforms/android/src/com/janeasystems/cdvnodejsmobile/jni/cordova-bridge.cpp",
+					"workingDirectory" : "C:/Users/GoodInI/Desktop/Cordova/favn_r/platforms/android/.externalNativeBuild/cmake/debug/x86"
+				}
+			],
+			"output" : "C:/Users/GoodInI/Desktop/Cordova/favn_r/platforms/android/build/intermediates/cmake/debug/obj/x86/libnodejs-mobile-cordova-native-lib.so",
+			"toolchain" : "1093562369"
+		}
+	},
+	"toolchains" : 
+	{
+		"1093562369" : 
+		{
+			"cCompilerExecutable" : "C:/Users/GoodInI/AppData/Local/Android/android-sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/bin/clang.exe",
+			"cppCompilerExecutable" : "C:/Users/GoodInI/AppData/Local/Android/android-sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/bin/clang++.exe"
+		}
+	}
+}

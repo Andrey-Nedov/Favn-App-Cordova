@@ -1,0 +1,19 @@
+# ninja log v5
+2	9792	0	CMakeFiles/nodejs-mobile-cordova-native-lib.dir/native-lib.cpp.o	5811b56e4c26273a
+48	10425	0	CMakeFiles/nodejs-mobile-cordova-native-lib.dir/cordova-bridge.cpp.o	8f94edeb7d6bbe63
+10427	11668	0	C:/Users/GoodInI/Desktop/Cordova/favn_r/platforms/android/build/intermediates/cmake/debug/obj/x86/libnodejs-mobile-cordova-native-lib.so	86644170d58f423d
+26	13121	0	CMakeFiles/nodejs-mobile-cordova-native-lib.dir/native-lib.cpp.o	5811b56e4c26273a
+260	13426	0	CMakeFiles/nodejs-mobile-cordova-native-lib.dir/cordova-bridge.cpp.o	8f94edeb7d6bbe63
+13427	14687	0	C:/Users/GoodInI/Desktop/Cordova/favn_r/platforms/android/build/intermediates/cmake/debug/obj/x86/libnodejs-mobile-cordova-native-lib.so	86644170d58f423d
+19	11104	0	CMakeFiles/nodejs-mobile-cordova-native-lib.dir/native-lib.cpp.o	5811b56e4c26273a
+187	11265	0	CMakeFiles/nodejs-mobile-cordova-native-lib.dir/cordova-bridge.cpp.o	8f94edeb7d6bbe63
+11266	12967	0	C:/Users/GoodInI/Desktop/Cordova/favn_r/platforms/android/build/intermediates/cmake/debug/obj/x86/libnodejs-mobile-cordova-native-lib.so	86644170d58f423d
+10	1462	0	CMakeFiles/nodejs-mobile-cordova-native-lib.dir/native-lib.cpp.o	5811b56e4c26273a
+27	2202	0	CMakeFiles/nodejs-mobile-cordova-native-lib.dir/cordova-bridge.cpp.o	8f94edeb7d6bbe63
+2202	2535	0	C:/Users/GoodInI/Desktop/Cordova/favn_r/platforms/android/build/intermediates/cmake/debug/obj/x86/libnodejs-mobile-cordova-native-lib.so	86644170d58f423d
+25	1414	0	CMakeFiles/nodejs-mobile-cordova-native-lib.dir/native-lib.cpp.o	5811b56e4c26273a
+10	2286	0	CMakeFiles/nodejs-mobile-cordova-native-lib.dir/cordova-bridge.cpp.o	8f94edeb7d6bbe63
+2287	2602	0	C:/Users/GoodInI/Desktop/Cordova/favn_r/platforms/android/build/intermediates/cmake/debug/obj/x86/libnodejs-mobile-cordova-native-lib.so	86644170d58f423d
+46	4362	0	CMakeFiles/nodejs-mobile-cordova-native-lib.dir/native-lib.cpp.o	5811b56e4c26273a
+127	5330	0	CMakeFiles/nodejs-mobile-cordova-native-lib.dir/cordova-bridge.cpp.o	8f94edeb7d6bbe63
+5330	5647	0	C:/Users/GoodInI/Desktop/Cordova/favn_r/platforms/android/build/intermediates/cmake/debug/obj/x86/libnodejs-mobile-cordova-native-lib.so	86644170d58f423d

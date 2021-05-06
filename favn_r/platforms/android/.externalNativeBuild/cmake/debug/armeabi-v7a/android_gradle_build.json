@@ -1,0 +1,55 @@
+
+{
+	"buildFiles" : 
+	[
+		"C:/Users/GoodInI/Desktop/Cordova/favn_r/platforms/android/src/com/janeasystems/cdvnodejsmobile/jni/CMakeLists.txt"
+	],
+	"cleanCommands" : 
+	[
+		"C:\\Users\\GoodInI\\AppData\\Local\\Android\\android-sdk\\cmake\\3.6.4111459\\bin\\cmake.exe --build C:\\Users\\GoodInI\\Desktop\\Cordova\\favn_r\\platforms\\android\\.externalNativeBuild\\cmake\\debug\\armeabi-v7a --target clean"
+	],
+	"cppFileExtensions" : [ "cpp" ],
+	"libraries" : 
+	{
+		"libnode-Debug-armeabi-v7a" : 
+		{
+			"abi" : "armeabi-v7a",
+			"artifactName" : "libnode",
+			"buildType" : "debug",
+			"output" : "C:/Users/GoodInI/Desktop/Cordova/favn_r/platforms/android/src/com/janeasystems/cdvnodejsmobile/jni/libnode/bin/armeabi-v7a/libnode.so",
+			"toolchain" : "1093562369"
+		},
+		"nodejs-mobile-cordova-native-lib-Debug-armeabi-v7a" : 
+		{
+			"abi" : "armeabi-v7a",
+			"artifactName" : "nodejs-mobile-cordova-native-lib",
+			"buildCommand" : "C:\\Users\\GoodInI\\AppData\\Local\\Android\\android-sdk\\cmake\\3.6.4111459\\bin\\cmake.exe --build C:\\Users\\GoodInI\\Desktop\\Cordova\\favn_r\\platforms\\android\\.externalNativeBuild\\cmake\\debug\\armeabi-v7a --target nodejs-mobile-cordova-native-lib",
+			"buildType" : "debug",
+			"files" : 
+			[
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi --gcc-toolchain=C:/Users/GoodInI/AppData/Local/Android/android-sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/windows-x86_64 --sysroot=C:/Users/GoodInI/AppData/Local/Android/android-sdk/ndk-bundle/sysroot  -Dnodejs_mobile_cordova_native_lib_EXPORTS -IC:\\Users\\GoodInI\\Desktop\\Cordova\\favn_r\\platforms\\android\\src\\com\\janeasystems\\cdvnodejsmobile\\jni\\libnode -isystem C:\\Users\\GoodInI\\AppData\\Local\\Android\\android-sdk\\ndk-bundle\\sources\\cxx-stl\\llvm-libc++\\include -isystem C:\\Users\\GoodInI\\AppData\\Local\\Android\\android-sdk\\ndk-bundle\\sources\\android\\support\\include -isystem C:\\Users\\GoodInI\\AppData\\Local\\Android\\android-sdk\\ndk-bundle\\sources\\cxx-stl\\llvm-libc++abi\\include  -isystem C:/Users/GoodInI/AppData/Local/Android/android-sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=14 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -mthumb -Wa,--noexecstack -Wformat -Werror=format-security -std=c++11  -O0 -fno-limit-debug-info  -fPIC    -c ",
+					"src" : "C:/Users/GoodInI/Desktop/Cordova/favn_r/platforms/android/src/com/janeasystems/cdvnodejsmobile/jni/native-lib.cpp",
+					"workingDirectory" : "C:/Users/GoodInI/Desktop/Cordova/favn_r/platforms/android/.externalNativeBuild/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi --gcc-toolchain=C:/Users/GoodInI/AppData/Local/Android/android-sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/windows-x86_64 --sysroot=C:/Users/GoodInI/AppData/Local/Android/android-sdk/ndk-bundle/sysroot  -Dnodejs_mobile_cordova_native_lib_EXPORTS -IC:\\Users\\GoodInI\\Desktop\\Cordova\\favn_r\\platforms\\android\\src\\com\\janeasystems\\cdvnodejsmobile\\jni\\libnode -isystem C:\\Users\\GoodInI\\AppData\\Local\\Android\\android-sdk\\ndk-bundle\\sources\\cxx-stl\\llvm-libc++\\include -isystem C:\\Users\\GoodInI\\AppData\\Local\\Android\\android-sdk\\ndk-bundle\\sources\\android\\support\\include -isystem C:\\Users\\GoodInI\\AppData\\Local\\Android\\android-sdk\\ndk-bundle\\sources\\cxx-stl\\llvm-libc++abi\\include  -isystem C:/Users/GoodInI/AppData/Local/Android/android-sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=14 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -mthumb -Wa,--noexecstack -Wformat -Werror=format-security -std=c++11  -O0 -fno-limit-debug-info  -fPIC    -c ",
+					"src" : "C:/Users/GoodInI/Desktop/Cordova/favn_r/platforms/android/src/com/janeasystems/cdvnodejsmobile/jni/cordova-bridge.cpp",
+					"workingDirectory" : "C:/Users/GoodInI/Desktop/Cordova/favn_r/platforms/android/.externalNativeBuild/cmake/debug/armeabi-v7a"
+				}
+			],
+			"output" : "C:/Users/GoodInI/Desktop/Cordova/favn_r/platforms/android/build/intermediates/cmake/debug/obj/armeabi-v7a/libnodejs-mobile-cordova-native-lib.so",
+			"toolchain" : "1093562369"
+		}
+	},
+	"toolchains" : 
+	{
+		"1093562369" : 
+		{
+			"cCompilerExecutable" : "C:/Users/GoodInI/AppData/Local/Android/android-sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/bin/clang.exe",
+			"cppCompilerExecutable" : "C:/Users/GoodInI/AppData/Local/Android/android-sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/bin/clang++.exe"
+		}
+	}
+}

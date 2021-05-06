@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+        <link rel="stylesheet" type="text/css" href="css/Peppermint_slide.css">
+    </head>
+    <body id="body">
+
+        <div id="mainPanels" class="mainPanels">    <!--Панель с топом и списками-->
+
+            <div id="statusPanel" class="statusPanel" style="display:block;">   <!--Топ с именем и типами подключения-->
+                
+                <button id="nameButton" class="nameButton">Андрей</button>
+                <button id="broadcast" class="broadcast" onclick="clear()"></button>
+                <button id="connect" class="connect"></button>
+
+            </div>
+
+            <div id="dopStatusPanel" class="dopStatusPanel" style="display:none;">  <!--Доп. панель. Появляется в разделах-->
+
+                <button class="allTrackLabel">Все композиции:</button>
+                <input type="text" value="поиск" id="search" class="search" onfocus="onfocusSearch()" onfocusout="onfocusoutSearch()">
+                <button id="searchButton" class="searchButton">искать</button>
+
+            </div>
+
+            <div id="cards" class="cards" style="display:block;">   <!--Главная страница-->
+
+                <button id="mainPageButtons" class="mainPageButtons" onclick="setTimeout(function(){allTracksFunc()},200)">
+                    <p class="bigButtonText"> Все композиции </p>
+                    <p class="smallButtonText" id="kolAll"> Сканирование... </p>
+                </button>
+
+                <button id="mainPageButtons" class="mainPageButtons">
+                    <p class="bigButtonText"> Плейлисты </p>
+                    <p class="smallButtonText"> 7 плейлистов </p>
+                </button>
+
+                <button id="mainPageButtons" class="mainPageButtons">
+                    <p class="bigButtonText"> Исполнители </p>
+                    <p class="smallButtonText"> Михаил Бакунин, Nina Simone... </p>
+                </button>
+
+                <button id="mainPageButtons" class="mainPageButtons">
+                    <p class="bigButtonText"> Альбомы </p>
+                    <p class="smallButtonText"> Back in Black, Sgt. Pepper's... </p>
+                </button>
+
+                <button class="themesBackGroundElement"></button>
+
+                <div id="themesButton" class="themesButton"></div>
+
+                <div style="background-color: transparent; margin-top, margin-left: 0; height: 5vh; width: 100vw;"></div>
+
+                <button id="mainPageButtons" class="mainPageButtons">
+                    <p class="bigButtonText"> Настройки </p>
+                </button>
+                
+            </div>
+
+            <div id="allTracks" class="allTracks" style="display:none;">     <!-- Список треков -->
+
+                <div class="preloader" id="preloader">  <!-- Предзагрузчик треков-->
+
+                    <button class="circle1"></button>
+                    <button class="circle2"></button>
+                    <button class="circle3"></button>
+
+                </div>
+
+                <div id="allTracksSpace" style="background-color: transparent; margin-top, margin-left: 0; height: 3vh; width: 100vw; background: linear-gradient(to top, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0) 15%); display: none;"></div>
+
+            </div>
+
+            <div id="cardsLayer" style="transition: all 0.3s ease; height:66vh; width:100vw; margin-top:-71vh; position:absolute; z-index:23; margin-left:0; background-color:transparent; display:block;">
+
+                <!-- <div id="forCopy" style="display: none;"></div> -->
+
+                <div class="peppermint peppermint-inactive" id="peppermint">
+
+                    <!-- <figure>
+                        <div class="trackCardsDiv" id="trackCardsDiv" onclick="tapCard()">
+                            
+                            <div id="innerCardDiv" style="width: 66vw; height: 92vw; margin-left: 7vw; margin-top: 0; background-color: transparent;">
+                                <div style="height:28vw; background-color: transparent;"></div>
+                                <div class="bigTextCard" id="bigTextCard">Questions</div>
+                                <div class="smallTextCard" id="smallTextCard">Tommy Emmanuel</div>
+                                <div class="playCard" id="playCard"></div>
+                                <div style="height:12vw; background-color: transparent;"></div>
+                                <button class="moreCard" id="moreCard" onclick="more()"></button>
+                            </div>
+
+                        </div>
+                    </figure> -->
+
+                </div>
+                
+            </div>
+
+            <div class="bottom" id="bottom" style="display: none;">          <!-- Панель плеера -->
+                
+                <button class="playButton" id="playButton" onclick="playPause()"></button>
+                <p class="bigButtonTextPanel" id="bigButtonTextPanel"></p>
+                <p class="smallButtonTextPanel" id="smallButtonTextPanel"></p>
+                <input class="duration" id="duration" type="range" min="0" max="1000" step="1" value="0" disabled="true">
+                <button class="toCardButton"></button>
+
+            </div>
+
+            <div class="bottomCard" id="bottomCard">          <!-- Панель плеера -->
+
+                <p class="timeFrom" id="timeFrom">2:17</p>
+                <p class="timeTo" id="timeTo">3:24</p>
+                <!-- <input class="durationCard" id="durationCard" type="range" min="0" max="1000" step="1" value="400" onmousedown="durMouseDown()" onmouseup="durMouseUp()"> -->
+                <input class="durationCard" id="durationCard" type="range" min="0" max="1000" step="1" value="0" oninput="sliderInput()" onmousedown="durDown()" = onchange="durChange()" onclick="durClick()">
+                <div style="height:5vw; width:5vw; background-color: #00b050; position: absolute; margin-top: 38.5vw; margin-left: 0; z-index: 31"></;div>
+
+                <!-- <div class="durationDiv" id="durationDiv">
+                    <div class="durationDivFill" id="durationDivFill"></div>
+                </div> -->
+
+                <button class="backCard" id="backCard" onclick="setTimeout(function(){backButton()}, 100)"></button>
+                <button class="directionCard" id="directionCard" onclick="directionCard()"></button>
+                <button class="sequenceCard" id="sequenceCard" onclick="sequenceCard()"></button>
+                <button class="repeatCard" id="repeatCard" onclick="repeatCard()"></button>
+                
+            </div>
+            
+        </div>
+
+        <div class="greenscreen" id="greenscreen"></div>    <!-- Зеленый экран предзагрузки приложения -->
+
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript" src="js/Peppermint_slide.js"></script>
+    </body>
+</html>

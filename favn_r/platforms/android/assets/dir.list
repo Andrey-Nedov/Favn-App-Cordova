@@ -1,0 +1,12 @@
+www/nodejs-project/node_modules
+www/nodejs-project/node_modules/jsmediatags
+www/nodejs-project/node_modules/jsmediatags/build2
+www/nodejs-project/node_modules/jsmediatags/dist
+www/nodejs-project/node_modules/xhr2
+www/nodejs-project/node_modules/xhr2/lib
+www/nodejs-project/node_modules/xhr2/src
+www/nodejs-project/node_modules/xhr2/test
+www/nodejs-project/node_modules/xhr2/test/fixtures
+www/nodejs-project/node_modules/xhr2/test/html
+www/nodejs-project/node_modules/xhr2/test/src
+www/nodejs-project/node_modules/xhr2/test/src/helpers
