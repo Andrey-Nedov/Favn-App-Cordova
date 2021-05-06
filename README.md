@@ -23,8 +23,8 @@
 [Скачать дизайн-проект приложения/Download application design project](https://github.com/Andrey-Nedov-is-a-human/Favn-App-Cordova/tree/main/imgs/Lookbook.pdf)
 
 <img src="/imgs/img3.png" width="500"/>
-
 <img src="/imgs/img2.png" width="500"/>
+<img src="/imgs/img6.jpg" width="500"/>
 
 ## Рабочий прототип
 
