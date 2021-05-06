@@ -11,3 +11,11 @@
 
 Приложение написано под платформу Android на JavaScript/HTML/CSS при помощи фреймворка Cordova, и может быть легко портирован на IOS.
 
+## Дизайн приложения
+[Дизайн-проект приложения/App design](/imgs/lookbook.pdf)
+
+<img src="/imgs/img3.png" width="500"/>
+
+Архитектура слоёв интерфейса
+<img src="/imgs/img2.png" width="500"/>
+
