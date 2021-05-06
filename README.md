@@ -16,6 +16,5 @@
 
 <img src="/imgs/img3.png" width="500"/>
 
-Архитектура слоёв интерфейса<br/>
 <img src="/imgs/img2.png" width="500"/>
 
