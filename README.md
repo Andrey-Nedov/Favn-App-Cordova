@@ -25,3 +25,10 @@
 
 <img src="/imgs/img2.png" width="500"/>
 
+## Рабочий прототип
+
+
+<img src="/imgs/img.gif" width="200"/>
+
+
+
