@@ -12,7 +12,7 @@
 Приложение написано под платформу Android на JavaScript/HTML/CSS при помощи фреймворка Cordova, и может быть легко портирован на IOS.
 
 ## Дизайн приложения
-[Скачать дизайн-проект приложения/Download app design](https://github.com/Andrey-Nedov-is-a-human/Favn-App-Cordova/tree/main/imgs/Lookbook.pdf)
+[Скачать дизайн-проект приложения/Download application design project](https://github.com/Andrey-Nedov-is-a-human/Favn-App-Cordova/tree/main/imgs/Lookbook.pdf)
 
 <img src="/imgs/img3.png" width="500"/>
 
