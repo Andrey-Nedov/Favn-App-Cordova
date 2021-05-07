@@ -1,4 +1,4 @@
-# Мобильное приложение для совместного прослушивания музыки на Cordova<br/><br/>Application for sharing music listening using Cordova
+# Мобильное приложение для совместного прослушивания музыки на Cordova / Application for sharing music listening using Cordova
 <img src="/imgs/img1.png" width="800"/>
 
 *01.07.2019 - 01.12.2019*  [![Generic badge](https://img.shields.io/badge/Status-Closed-red.svg)](https://shields.io/)<br/>
